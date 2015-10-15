@@ -53,29 +53,22 @@
 //                 currentParagraph.append(myButton);
 
 
-
-$('div.announcement').append('<button>X</button>');
-
-$('button').on('click', function() {
-    $(this).parent().toggleClass('hidden');
-});
-
-// $('div.announcement').each(
-//     function() {
-//         var $currentAnnouncement = $(this);
+$('div.announcement').each(
+    function() {
+        var $currentAnnouncement = $(this);
         
-//         var $button = $('<button>X</button>');
-//         $currentAnnouncement.append($button);
+        var $button = $('<button>X</button>');
+        $currentAnnouncement.append($button);
         
-//         $button.on('click', function() {
-//             if ($button.text() === "X") {
-//                 $currentAnnouncement.find('p').hide();
-//                 $button.text("Show announcement");
-//             }
-//             else {
-//                 $currentAnnouncement.find('p').show();
-//                 $button.text("X");
-//             }
-//         });
-//     }
-// )
+        $button.on('click', function() {
+            if ($button.text() === "X") {
+                $currentAnnouncement.find('p').hide();
+                $button.text("Show announcement");
+            }
+            else {
+                $currentAnnouncement.find('p').show();
+                $button.text("X");
+            }
+        });
+    }
+)
