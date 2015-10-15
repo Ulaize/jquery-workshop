@@ -1,19 +1,29 @@
 /* Write your code here */
-.announcement {
-    background-color: aliceblue;
-    padding: 0.5em;
-    position: relative;
+ul {
+    li {
+    width:25%;
+    float:left;
+    list-style:none;
     
-    button{
-        background-color:grey;
-        color:white;
-        border:1px;
-        border-radius:3px;
-        position:absolute; top:0px; left:0px;
-    }
-    
-    &.hidden p {
-        display: none;
+        img{
+            width:100%
+        }
     }
 }
 
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.75);
+    img{
+        margin:auto;
+    }
+    
+    p{
+     
+    }
+}
