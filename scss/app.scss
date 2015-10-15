@@ -1,0 +1,19 @@
+/* Write your code here */
+.announcement {
+    background-color: aliceblue;
+    padding: 0.5em;
+    position: relative;
+    
+    button{
+        background-color:grey;
+        color:white;
+        border:1px;
+        border-radius:3px;
+        position:absolute; top:0px; left:0px;
+    }
+    
+    &.hidden p {
+        display: none;
+    }
+}
+
